@@ -1,0 +1,21 @@
+● cc-m03.service - PTI 2802 M03 Flask Application
+     Loaded: loaded (/etc/systemd/system/cc-m03.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2026-10-14 18:39:23 WIB; 16min ago
+   Main PID: 725 (gunicorn)
+      Tasks: 3 (limit: 472)
+     Memory: 35.4M (peak: 35.7M)
+        CPU: 531ms
+     CGroup: /system.slice/cc-m03.service
+             ├─725 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+             └─953 /srv/cc-m03/.venv/bin/python /srv/cc-m03/.venv/bin/gunicorn --workers 1 --threads 2 --bind 127.0.0.1:8000 --timeout 30 --access-logfile - --error-logfile - app:app
+
+Oct 14 18:39:25 cc-m03-25832071001 gunicorn[725]: [2026-10-14 18:39:25 +0700] [725] [INFO] Listening at: http://127.0.0.1:8000 (725)
+Oct 14 18:39:25 cc-m03-25832071001 gunicorn[725]: [2026-10-14 18:39:25 +0700] [725] [INFO] Using worker: gthread
+Oct 14 18:39:25 cc-m03-25832071001 gunicorn[953]: [2026-10-14 18:39:25 +0700] [953] [INFO] Booting worker with pid: 953
+Oct 14 18:39:25 cc-m03-25832071001 gunicorn[725]: [2026-10-14 18:39:25 +0700] [725] [ERROR] Control server error: [Errno 13] Permission denied: '/home/cloudstudent'
+Oct 14 18:53:24 cc-m03-25832071001 gunicorn[953]: 127.0.0.1 - - [14/Oct/2026:18:53:24 +0700] "GET / HTTP/1.1" 200 782 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36"
+Oct 14 18:53:26 cc-m03-25832071001 gunicorn[953]: 127.0.0.1 - - [14/Oct/2026:18:53:26 +0700] "GET / HTTP/1.1" 200 782 "-" "Mozilla/5.0 (compatible)"
+Oct 14 18:53:26 cc-m03-25832071001 gunicorn[953]: 127.0.0.1 - - [14/Oct/2026:18:53:26 +0700] "OPTIONS / HTTP/1.1" 200 0 "-" "Mozilla/5.0 (compatible)"
+Oct 14 18:53:26 cc-m03-25832071001 gunicorn[953]: 127.0.0.1 - - [14/Oct/2026:18:53:26 +0700] "GET /favicon.ico HTTP/1.1" 404 207 "-" "Mozilla/5.0 (compatible)"
+Oct 14 18:53:26 cc-m03-25832071001 gunicorn[953]: 127.0.0.1 - - [14/Oct/2026:18:53:26 +0700] "VRKC / HTTP/1.1" 405 153 "-" "Mozilla/5.0 (compatible)"
+Oct 14 18:53:27 cc-m03-25832071001 gunicorn[953]: 127.0.0.1 - - [14/Oct/2026:18:53:27 +0700] "POST / HTTP/1.1" 405 153 "-" "Mozilla/5.0 (compatible)"
