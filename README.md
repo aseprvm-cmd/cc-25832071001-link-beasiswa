@@ -1,4 +1,4 @@
-# Sistem Peminjaman Lab
+# Sistem Praktikum dan Peminjaman Alat Lab
 
 Cloud Computing - PTI 2802
 Pertemuan 3 - Project Inception
@@ -7,15 +7,21 @@ Pertemuan 3 - Project Inception
 Asep Solihin / NIM 25832071001 / Kelas PTI 2A
 
 ## Problem
-Pencatatan peminjaman perangkat lab masih manual sehingga sulit dilacak.
+Pencatatan peminjaman alat dan kegiatan praktikum lab masih manual
+sehingga alat sulit dilacak dan hasil belajar mahasiswa tidak terekam.
 
 ## Target Users
-Administrator lab, mahasiswa peminjam, dosen/kepala lab.
+Administrator lab, mahasiswa, dosen/kepala lab.
 
 ## Features M03
 - Baseline aplikasi Flask
 - Health endpoint
 - First VPS deployment
+
+## Planned Features
+- Daftar praktikum, sesi, dan alat lab
+- Peminjaman dan pengembalian alat per sesi
+- Logbook praktikum mahasiswa
 
 ## Architecture
 
@@ -51,4 +57,5 @@ Lihat `docs/deployment.md`.
 - Deployment manual
 
 ## Roadmap
-M04 DNS/HTTPS, M05 Data, M06 Container, M07 IaC, M09 CI/CD
+M04 DNS/HTTPS, M05 Data (praktikum, alat, logbook), M06 Container,
+M07 IaC, M09 CI/CD
