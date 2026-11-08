@@ -30,6 +30,7 @@ def info():
     return jsonify(
         course="Cloud Computing",
         code="PTI 2802",
+        project="Sistem Pengumpulan Tautan Beasiswa",
         meeting=3,
         milestone="M03",
         deployment="VPS Ubuntu Server 24.04",

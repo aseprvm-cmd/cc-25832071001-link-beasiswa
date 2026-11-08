@@ -1,4 +1,4 @@
-# Architecture v0.1
+# Architecture v0.1 — Sistem Pengumpulan Tautan Beasiswa
 
 ## Deployment View
 
@@ -26,6 +26,15 @@ flowchart LR
     G -->|git clone / pull| V
 ```
 
+## Application Context (rencana, M05)
+
+```mermaid
+flowchart LR
+    P[Pengguna] -->|lihat, tambah, laporkan| W[Aplikasi Web]
+    AD[Admin] -->|pulihkan / hapus| W
+    W --> D[(SQLite)]
+```
+
 ## Resource Constraints
 - 2 vCPU (hasil nproc)
 - 1 GB RAM (+1 GB swap sebagai safety buffer)
@@ -47,7 +56,7 @@ flowchart LR
 
 ## Planned Evolution
 - M04 DNS + HTTPS
-- M05 Persistent data
+- M05 Persistent data dan fitur beasiswa
 - M06 Container
 - M07 Infrastructure as Code
 - M09 CI/CD

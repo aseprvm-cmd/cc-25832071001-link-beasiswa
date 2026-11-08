@@ -4,9 +4,10 @@
 Accepted
 
 ## Context
-VPS Ubuntu Server 24.04 dengan RAM 1 GB (2 vCPU terdeteksi) dan
-disk 29 GB. Proyek membutuhkan deployment publik yang aman,
-sederhana, dan dapat direproduksi dari repository.
+Proyek Sistem Pengumpulan Tautan Beasiswa membutuhkan deployment
+publik yang aman, sederhana, dan dapat direproduksi dari repository.
+Beban aplikasi didominasi pembacaan daftar tautan. VPS Ubuntu Server
+24.04 memiliki RAM 1 GB (2 vCPU terdeteksi) dan disk 29 GB.
 
 ## Decision
 - Flask sebagai web framework
